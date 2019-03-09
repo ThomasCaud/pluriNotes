@@ -1,0 +1,32 @@
+/**
+*	Explications pour faire la liaison entre les design UI et le code
+*	Edition : 22_05_2017 (Quentin)
+**/
+
+Les fenêtres UI
+
+	Création :
+
+		création d'un fichier classique > Application Qt avec Widgets > choisir l'emplacement > créer le fichier
+
+	Edition :
+
+		ajout des widgets grâce à la partie gauche (en drag & drop)
+		Les layouts : utiles pour faire du "responsive" (pas utilisés pour le moment)
+		Index des widgets sur la partie droite haute
+		Info sur le widget selectionné sur la partie droite basse : possibilité d'éditer les propriétés et leur valeur
+
+	Liaison design/code via la gestion des êvenements
+
+		Rester dans le mode edition du design .ui
+		Clic droit sur le widget déclencheur de l'evenement > Aller au slot > choisir l'event déclencheur
+		A la validation : création automatique dans la classe du design du private slot, création automatique de la fonction appelée dans le .cpp
+		
+
+Dans le code :
+	
+		Il ne reste "qu'à" coder les evenements conséquences dans la dite fonction
+		
+		
+ENJOY !!!
+

@@ -1,0 +1,28 @@
+Class version - renommer attr "version" => "noVersion"
+Class version - agrégation depuis version vers AbstractNote ? Voir Composition ?
+Class AbstractNote - add op "setTitle(String s)"
+Class note - ajout d'un attribut "nbNote" qui est static (pour dÃ©terminer quel est l'ID d'une nouvelle Note)
+Class versionCollection void addVersion(const AbstractNote &, int);
+
+Class versionCollection enlever attributs length,nbElement,versionList et ajouter "Vector<Version>"
+Renommer VersionCollection en VersionManager
+Class AbstractNote est maintenant une classe...abstraite
+
+Ajouter lien d'association 1-1 entre Association et NoteFactory
+Class note : ajouter fontion "void ajouterVersion(AbstractNote*);"
+Class XMLNoteManager: Supprimer les fonctions add et créer une fonction "save(Parameter&)"
+Class Application: changer le type de "instance" de string->Application
+Class note : renamme "getVersions" to "getVersionManager"
+Class AbstractNote: ajouter fonction static "getTypeNote()const"
+Créer class Parameter avec attribut "removeAuto: boolean"
++relation de composition avec application
+Supprimer classe "XMLParameter"
+Ajouter fonction "setParameter" dans XMLNoteManager
+Renommer XMLNoteManager en XMLManager
+
+Modification des fichiers mainwindow.* en FenPrincipale.*
+Ajout d'un attribut title dans la classe Note, et getTitle()
+
+TOUTES LES MODIFS PRECEDENTES ONT ETE PRISE EN COMPTE (A CONFIRMER)
+Créer classe AudioFactory, VideoFactory,ImageFactory, qui vont vers NoteFactory
+Vérifier lien entre TaskFactory/ArticleFactory etc et NoteFactory (ce n'est pas de l'héritage il me semble)
